@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(36, 36, 36);
+}
+
+header {
+  display: flex;
+}
+footer {
+  display: flex;
+  color: white;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+  padding: 1em;
+}
+#welcome {
+  width: 100vw;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+nav {
+  width: 100vw;
+  background-color: rgb(23, 23, 23);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.link {
+  padding: 1em 3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+#boosts {
+  margin: auto;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+#su-table {
+  margin: auto;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#su-table input,
+div {
+  margin: 0.4em;
+}
+input {
+  color: black;
+  padding: 0.4em;
+}
+.title {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: brown;
+  font-size: 1.2em;
+}
+.column-title {
+  color: brown;
+}
+.row-title {
+  padding: 0.4em;
+  font-size: 1em;
+  color: rgb(133, 71, 191);
+}
+
+#summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+#su-total {
+  color: rgb(76, 160, 34);
+  padding: 0.4em;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Stellaris Galaxy Command Calc - Leviathan</title>
+  </head>
+  <body>
+    <main>
+      <header></header>
+
+      <div class="title">Leviathan ship building Calc</div>
+      <section id="boosts">
+        <div class="column-title">Original ship Building time (h)</div>
+        <input id="ship-time" type="number" name="shipTime" min="0" value="0" />
+        <div class="column-title">Boost yet to activate (%)</div>
+        <input type="number" name="boost" min="0" value="0" />
+      </section>
+      <section id="su-table">
+        <div class="column-title">Speed Ups</div>
+        <div class="column-title">Amount</div>
+        <div class="row-title">1 min</div>
+        <input type="number" name="1m" min="0" value="0" />
+        <div class="row-title">5 min</div>
+        <input type="number" name="5m" min="0" value="0" />
+        <div class="row-title">15 min</div>
+        <input type="number" name="15m" min="0" value="0" />
+        <div class="row-title">1 h</div>
+        <input type="number" name="1h" min="0" value="0" />
+        <div class="row-title">3 h</div>
+        <input type="number" name="3h" min="0" value="0" />
+        <div class="row-title">8 h</div>
+        <input type="number" name="8h" min="0" value="0" />
+        <div class="row-title">1 d</div>
+        <input type="number" name="1d" min="0" value="0" />
+        <div class="row-title">3 d</div>
+        <input type="number" name="3d" min="0" value="0" />
+        <div class="row-title">Total:</div>
+        <div id="su-total"></div>
+      </section>
+      <section id="summary">
+        <div>You are able to build:</div>
+        <div id="ships-total"></div>
+      </section>
+      <footer>Copyrights Ka Mil 2023</footer>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>
