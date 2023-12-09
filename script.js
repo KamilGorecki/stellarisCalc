@@ -58,23 +58,24 @@ function getAmount() {
     } else if (elem.name === "shipTime") {
       shipSum = parseInt(i) * 60;
     } else if (elem.name === "boost") {
-      boost = 1 - parseInt(i) / 100;
+      if (i != 0) {
+        boost = 1 - parseInt(i) / 100;
+      }
     }
   });
 
-  if (boost == 0) {
-    ships = sum / shipSum;
-  } else if (boost > 0) {
+  if (boost > 0 && boost < 1) {
     console.log(boost);
     shipSum = shipSum * boost;
     ships = sum / shipSum;
   }
+  ships = sum / shipSum;
   shipsTotal.innerHTML = Math.floor(ships);
   total.innerHTML = convertToDays(sum);
 }
 
 function convertToDays(num) {
-  d = Math.floor(num / 1440); // 60*24
+  d = Math.floor(num / 1440);
   h = Math.floor((num - d * 1440) / 60);
   m = Math.round(num % 60);
 
